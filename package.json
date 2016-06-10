@@ -1,14 +1,15 @@
 {
   "name": "accessible-bootstrap3-rails",
   "version": "0.1.0",
-  "description": "A gem to bring bootstrap3-accessibility-patches into your rails project ",
+  "description": "A gem to bring the accessible-bootstrap3 npm package into your rails project ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Brandon Howard <brandonrhoward@gmail.com> (brandonrhoward.com)",
+  "author": "Brandon Howard <brandon@reax.io> (brandonrhoward.com)",
   "license": "MIT",
   "dependencies": {
+    "accessible-bootstrap3": "0.1.0",
     "bootstrap3-accessibility-patches": "0.0.5"
   }
 }

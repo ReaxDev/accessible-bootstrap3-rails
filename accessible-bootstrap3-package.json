@@ -1,0 +1,89 @@
+{
+  "_args": [
+    [
+      {
+        "name": "accessible-bootstrap3",
+        "raw": "accessible-bootstrap3",
+        "rawSpec": "",
+        "scope": null,
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/brandonhoward/Desktop/code/reax_code/accessible-bootstrap3-rails"
+    ]
+  ],
+  "_from": "accessible-bootstrap3@latest",
+  "_id": "accessible-bootstrap3@0.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/accessible-bootstrap3",
+  "_nodeVersion": "5.10.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/accessible-bootstrap3-0.1.0.tgz_1465563692135_0.5165368870366365"
+  },
+  "_npmUser": {
+    "email": "the-team@reax.io",
+    "name": "reax"
+  },
+  "_npmVersion": "3.9.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "accessible-bootstrap3",
+    "raw": "accessible-bootstrap3",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/accessible-bootstrap3/-/accessible-bootstrap3-0.1.0.tgz",
+  "_shasum": "83fd897fd33350c9d64eb44ec1fed4094b48d7ae",
+  "_shrinkwrap": null,
+  "_spec": "accessible-bootstrap3",
+  "_where": "/Users/brandonhoward/Desktop/code/reax_code/accessible-bootstrap3-rails",
+  "author": {
+    "email": "brandon@reax.io",
+    "name": "Brandon Howard",
+    "url": "brandonrhoward.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ReaxDev/accessible-bootstrap3/issues"
+  },
+  "dependencies": {
+    "jquery": ">=1.9.1 < 2.0.0"
+  },
+  "description": "A js script for making your bootstrap3 web app more accessible.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "83fd897fd33350c9d64eb44ec1fed4094b48d7ae",
+    "tarball": "https://registry.npmjs.org/accessible-bootstrap3/-/accessible-bootstrap3-0.1.0.tgz"
+  },
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "gitHead": "fb461a2f25dab0c7b5748196f7e480d95be4d809",
+  "homepage": "https://github.com/ReaxDev/accessible-bootstrap3#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "email": "the-team@reax.io",
+      "name": "reax"
+    }
+  ],
+  "name": "accessible-bootstrap3",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ReaxDev/accessible-bootstrap3.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.0"
+}
