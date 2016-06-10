@@ -86,6 +86,19 @@ $(document).ready(function() {
       subMenu.css('display') == "none" ? subMenu.css('display', 'block' ) : subMenu.css('display', 'none' )
     }
   });
+
+  $(".dropdown-menu").keydown(function(event) {
+    closeIfEscapeKeyDown(event, $(this));
+  }).children().bind("click",function(event){
+    closeIfEscapeKeyDown(event, $(this));
+  });
+
+  var closeIfEscapeKeyDown = function(event, element) {
+    if ((event.keyCode || event.which) == 27) {
+      element.prev("a").focus().click();
+    }
+  }
+
 ///////////////////////////////////////////////////////
 
 //// Skip Navigation ////////////////////////////////////////////////////

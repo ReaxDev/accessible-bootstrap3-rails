@@ -1,6 +1,6 @@
 #!/bin/bash
 
-npm install accessible-bootstrap3
+npm install accessible-bootstrap3@latest
 
 rm -rf vendor
 
@@ -20,5 +20,5 @@ cat node_modules/accessible-bootstrap3/README.md >> README.md
 
 rm -rf node_modules
 
-echo 'Done.'
-echo 'DO NOT FORGET TO UPDATE VERSION IN GEMSPEC!'
+echo 'Nailed it!'
+echo "Don't forget to bump the GIT tag."
