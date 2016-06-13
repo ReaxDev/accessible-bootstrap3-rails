@@ -1,11 +1,12 @@
 $(document).ready(function() {
-  console.log("bootstrap3-accessibility-patches loaded.");
+  console.log("accessible-bootstrap3 loaded.");
 
   var getKeyCode = function(event) {
     // Some browsers use keyCode and some use which.
     // Return whichever one doesn't blow up.
     return event.keyCode || event.which;
   }
+
   //////////////////////////////////////////////////////////////////
   // This code removes the open class from a .dropdown menu,
   // or adds {"display": "none"} css to .sub-menu menu
@@ -133,7 +134,12 @@ $(document).ready(function() {
         event.target.click();
         return false
       }
-      if ($(event.target).is("select")) {event.preventDefault(); mouseDown(event.target); return false}
+      if ($(event.target).is("select")) {
+        event.preventDefault();
+        mouseDown(event.target);
+        return false
+      }
+      if ($(event.target).is(".redactor-editor")) {return true}
 
       tabIndexForward(event);
       event.preventDefault();

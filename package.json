@@ -9,6 +9,6 @@
   "author": "Brandon Howard <brandon@reax.io> (brandonrhoward.com)",
   "license": "MIT",
   "dependencies": {
-    "accessible-bootstrap3": "0.1.1"
+    "accessible-bootstrap3": "0.1.3"
   }
 }
