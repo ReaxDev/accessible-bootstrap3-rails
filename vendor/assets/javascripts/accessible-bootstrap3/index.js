@@ -7,6 +7,10 @@ $(document).ready(function() {
     return event.keyCode || event.which;
   }
 
+///// Make sure all submenu links are focusable
+  $(".trigger").each(function() {
+    $(this).attr("tabindex", false);
+  });
   //////////////////////////////////////////////////////////////////
   // This code removes the open class from a .dropdown menu,
   // or adds {"display": "none"} css to .sub-menu menu
