@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 ///// Make sure all submenu links are focusable
   $(".trigger").each(function() {
-    $(this).attr("tabindex", false);
+    $(this).attr("tabindex", 0);
   });
   //////////////////////////////////////////////////////////////////
   // This code removes the open class from a .dropdown menu,
