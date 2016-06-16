@@ -7,9 +7,14 @@ $(document).ready(function() {
     return event.keyCode || event.which;
   }
 
-///// Make sure all submenu links are focusable
-  $(".trigger").each(function() {
+  // Make sure all submenu links are focusable
+  $(".trigger, .dropdown-toggle").each(function() {
     $(this).attr("tabindex", 0);
+    $(this).attr("aria-haspopup", true)
+  });
+  // properly label menu's
+  $(".dropdown-menu, .dropdown-submenu").each(function() {
+    $(this).attr("role", "menu");
   });
   //////////////////////////////////////////////////////////////////
   // This code removes the open class from a .dropdown menu,
@@ -80,12 +85,13 @@ $(document).ready(function() {
     }
   });
 
-  $('.dropdown-submenu a.trigger').keydown(function(event) {
+  $('.dropdown-submenu a.trigger').on('keydown click', function(event) {
     var code = getKeyCode(event);
     var subMenu = $(this).next("ul.sub-menu");
 
-    if (code === 32 ) {
+    if (code === 32 || code === 1 || code == 13) {
       // Stop page scroll
+      event.stopPropagation();
       event.preventDefault();
       // Open and close submenu when space bar is hit.
       subMenu.css('display') == "none" ? subMenu.css('display', 'block' ) : subMenu.css('display', 'none' )
