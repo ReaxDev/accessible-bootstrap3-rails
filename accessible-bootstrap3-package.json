@@ -13,14 +13,14 @@
     ]
   ],
   "_from": "accessible-bootstrap3@latest",
-  "_id": "accessible-bootstrap3@0.2.2",
+  "_id": "accessible-bootstrap3@0.2.3",
   "_inCache": true,
   "_installable": true,
   "_location": "/accessible-bootstrap3",
   "_nodeVersion": "5.10.0",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/accessible-bootstrap3-0.2.2.tgz_1466094775595_0.39899865607731044"
+    "tmp": "tmp/accessible-bootstrap3-0.2.3.tgz_1466617887222_0.22844799980521202"
   },
   "_npmUser": {
     "email": "the-team@reax.io",
@@ -39,8 +39,8 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/accessible-bootstrap3/-/accessible-bootstrap3-0.2.2.tgz",
-  "_shasum": "fc1de88da1349a2c2adfcc008ce6b79f2e922b2e",
+  "_resolved": "https://registry.npmjs.org/accessible-bootstrap3/-/accessible-bootstrap3-0.2.3.tgz",
+  "_shasum": "6e02d46ece940d581adea4bac82c94658afea189",
   "_shrinkwrap": null,
   "_spec": "accessible-bootstrap3@latest",
   "_where": "/Users/brandonhoward/Desktop/code/reax_code/accessible-bootstrap3-rails",
@@ -59,13 +59,13 @@
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "fc1de88da1349a2c2adfcc008ce6b79f2e922b2e",
-    "tarball": "https://registry.npmjs.org/accessible-bootstrap3/-/accessible-bootstrap3-0.2.2.tgz"
+    "shasum": "6e02d46ece940d581adea4bac82c94658afea189",
+    "tarball": "https://registry.npmjs.org/accessible-bootstrap3/-/accessible-bootstrap3-0.2.3.tgz"
   },
   "engines": {
     "node": ">=4.2.4"
   },
-  "gitHead": "7e03b9094528b8b7b04ce3cc1c9552b70d0edb2c",
+  "gitHead": "12e227705d2b47c3a2aae8c0df864edae85d9bbb",
   "homepage": "https://github.com/ReaxDev/accessible-bootstrap3#readme",
   "license": "MIT",
   "main": "index.js",
@@ -89,5 +89,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "0.2.2"
+  "version": "0.2.3"
 }

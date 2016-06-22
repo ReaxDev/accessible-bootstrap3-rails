@@ -25,7 +25,7 @@ $(document).ready(function() {
     // remove open class from all .dropdown elements
     $('.dropdown').removeClass('open');
     // Set aria-expanded="false" after we close the dropdown.
-    $('.dropdown a.dropdown-toggle').attr("aria-expanded", false);
+    $('.dropdown .dropdown-toggle').attr("aria-expanded", false);
   });
 
   $('.dropdown').focusin(function(){
@@ -38,7 +38,7 @@ $(document).ready(function() {
       // on any of the children elements.
       event.stopPropagation();
       // Close sub-menu dropdown by adding display: none css.
-      $('.dropdown-submenu > ul.sub-menu').css({"display": "none"})
+      $('.dropdown-submenu > .sub-menu').css({"display": "none"})
     });
   });
 
