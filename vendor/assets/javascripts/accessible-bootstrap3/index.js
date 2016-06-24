@@ -151,8 +151,8 @@ $(document).ready(function() {
       }
       if ($(event.target).is(".redactor-editor")) {return true}
 
-      tabIndexForward(event);
-      event.preventDefault();
+      // If true prevent the form submit.
+      if (tabIndexForward(event)) event.preventDefault();
     }
   });
 
@@ -166,9 +166,12 @@ $(document).ready(function() {
   // Move tab index forward one input inside the form an event originates.
   var tabIndexForward = function(event) {
     var inputs = $(event.target).parents("form").eq(0).find(":input:visible");
-    var idx = inputs.index(event.target);
-    // If at end of focusable elements move back to beginning, if not move forward one.
-    (idx == inputs.length - 1) ? inputs[0].focusin() : inputs[idx + 1].focus();
+    var inputIndex = inputs.index(event.target);
+    // If at end of focusable elements return false, if not move forward one.
+    if (inputIndex == inputs.length - 1) {
+      // return false on last form input so we know to let the form submit.
+      return false
+    } else {inputs[inputIndex + 1].focus();}
   }
   /////////////////////////////////////////////////////////////////////////
 });
